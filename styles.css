@@ -1,0 +1,167 @@
+body,ul,li,h1,h2,a{
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+header{
+    background-color: crimson;
+    color:white;
+    padding: 3px;
+   text-align: center;
+   font-size: 7px;
+   position:fixed;
+   z-index:1;
+   width: 100%;
+    top:0px;
+    left:0;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid white;
+    display:inline-block;
+    padding: 10px 23px;
+    border-radius: 24px;
+}
+.banner{
+    position:relative;
+    
+}
+.banner img{
+    max-width: 100%;
+   
+}
+.banner .welcome{
+    background-color: orange;
+    color:white;
+    padding:20px;
+    position:absolute;
+    left:0px;
+    top:50%;
+}
+.banner h1{
+    font-size: 30px;
+}
+.banner h1 span{
+    font-size: 1.6em;
+}
+nav{
+    background-color:whitesmoke;
+    padding:10px;
+    position:sticky;
+    top:48px;
+    left:0px;
+    
+}
+ nav ul{
+    list-style: none;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+nav li{
+    width:24%;
+    display: inline-block;
+    font-size: 15px;
+}
+nav li a{
+    text-decoration: none;
+    color:black;
+}
+main{
+    max-width:100%;
+    width:1200;
+    margin:80px auto;
+    padding:0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color:crimson;
+    font-size:48px;
+}
+
+article p{
+    line-height: 1.2em;
+    font-size: 20px;
+}
+
+.images{
+    text-align:center;
+    margin:80px 0px;
+    white-space: nowrap;
+}
+.images li{
+    list-style: none;
+    display: inline-block;
+    width:40%;
+    margin:20px 5px;
+}
+.images li img{
+    max-width:100%;
+}
+.join{
+  background:#F4F4F4;
+  text-align: center;
+  padding: 60px 20px;
+  color:#4b4b4b;
+
+}
+.join h2{
+    color:crimson;
+    font-size: 35px;
+}
+.join p{
+    color:grey;
+    font-size: 20px;
+}
+form input{
+    padding:5px 20px;
+    margin:10px;
+    border-radius: 10px;
+}
+footer{
+    background: crimson;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+
+}
+footer h2{
+    padding:5px 20px;
+}
+footer p{
+    font-size: 10px;
+    padding-top:5px;
+    padding-bottom:20px;
+}
+nav li a:hover{
+    text-decoration:underline;
+    color:green;
+    padding:4px;
+}
+form input:focus{
+    border:2px dashed black;
+    outline: none;
+}
+form input:valid{
+    border:2px solid green;
+}
+@media only screen and (max-width:800px){
+    .banner .welcome h1{
+        font-size:10px;
+    }
+    nav li{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:320px){
+    .banner .welcome h1{
+        font-size:4px;
+    }
+    nav li{
+        font-size: 8px;
+    }
+}
